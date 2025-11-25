@@ -1,0 +1,152 @@
+{
+  "dataset": "stress.jsonl",
+  "macro_f1": 0.4013605442176871,
+  "micro": {
+    "precision": 0.4444444444444444,
+    "recall": 0.5,
+    "f1": 0.47058823529411764,
+    "tp": 120,
+    "fp": 150,
+    "fn": 120
+  },
+  "per_label": {
+    "CITY": {
+      "tp": 40,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CREDIT_CARD": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "DATE": {
+      "tp": 40,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "EMAIL": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "PERSON_NAME": {
+      "tp": 40,
+      "fp": 116,
+      "fn": 0,
+      "precision": 0.2564102564102564,
+      "recall": 1.0,
+      "f1": 0.4081632653061224
+    },
+    "PHONE": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 40,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  },
+  "pii_group": {
+    "pii": {
+      "precision": 0.40816326530612246,
+      "recall": 0.4,
+      "f1": 0.4040404040404041,
+      "tp": 80,
+      "fp": 116,
+      "fn": 120
+    },
+    "non_pii": {
+      "precision": 0.5405405405405406,
+      "recall": 1.0,
+      "f1": 0.7017543859649124,
+      "tp": 40,
+      "fp": 34,
+      "fn": 0
+    }
+  },
+  "span_length": {
+    "count": 270,
+    "median": 4.0,
+    "p95": 18,
+    "mean": 6.662962962962963
+  },
+  "validation": {
+    "dropped_counts": {
+      "CITY": 0,
+      "CREDIT_CARD": 0,
+      "DATE": 0,
+      "EMAIL": 79,
+      "PERSON_NAME": 0,
+      "PHONE": 120
+    },
+    "raw_file": "out/stress_pred_raw.json",
+    "validated_file": "out/stress_pred_valid.json"
+  },
+  "false_positives": {
+    "PERSON_NAME": [
+      {
+        "start": 0,
+        "end": 2,
+        "text": "ha"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "text": "naam"
+      },
+      {
+        "start": 48,
+        "end": 50,
+        "text": "ht"
+      },
+      {
+        "start": 0,
+        "end": 4,
+        "text": "haan"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "text": "naam"
+      },
+      {
+        "start": 0,
+        "end": 4,
+        "text": "haan"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "text": "naam"
+      },
+      {
+        "start": 42,
+        "end": 44,
+        "text": "ht"
+      },
+      {
+        "start": 0,
+        "end": 2,
+        "text": "ha"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "text": "naam"
+      }
+    ]
+  }
+}

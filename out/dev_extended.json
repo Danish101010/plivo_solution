@@ -1,0 +1,99 @@
+{
+  "dataset": "dev.jsonl",
+  "macro_f1": 0.9166666666666666,
+  "micro": {
+    "precision": 1.0,
+    "recall": 0.9310344827586207,
+    "f1": 0.9642857142857143,
+    "tp": 27,
+    "fp": 0,
+    "fn": 2
+  },
+  "per_label": {
+    "CITY": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DATE": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "EMAIL": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5
+    },
+    "LOCATION": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PERSON_NAME": {
+      "tp": 9,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PHONE": {
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "pii_group": {
+    "pii": {
+      "precision": 1.0,
+      "recall": 0.9047619047619048,
+      "f1": 0.9500000000000001,
+      "tp": 19,
+      "fp": 0,
+      "fn": 2
+    },
+    "non_pii": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "span_length": {
+    "count": 27,
+    "median": 11,
+    "p95": 15,
+    "mean": 10.777777777777779
+  },
+  "validation": {
+    "dropped_counts": {
+      "CITY": 0,
+      "DATE": 0,
+      "EMAIL": 2,
+      "LOCATION": 0,
+      "PERSON_NAME": 0,
+      "PHONE": 0
+    },
+    "raw_file": "out/dev_pred_raw.json",
+    "validated_file": "out/dev_pred_valid.json"
+  },
+  "false_positives": {}
+}
